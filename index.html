@@ -17,13 +17,19 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 </head>
 <body>
-  <audio id="my_audio" src="./songs/lm.mp3" autoplay loop></audio>
+  <audio id="my_audio" src="./songs/lm.mp3" autoplay loop muted></audio>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var audio = document.getElementById("my_audio");
-            audio.play();
+            // Unmute the audio after a brief delay
+            setTimeout(function() {
+                audio.muted = false;
+                audio.play();
+            }, 1000); // Adjust the delay as needed
         });
     </script>
+
   <header>
     <div class="header-w3l">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
