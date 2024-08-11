@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sevas :: SCSK Matha</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    <meta name="keywords" content="temple, nandyal, durga, kalika matha, devotional">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style_common.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffc107;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #ffc107;
+            color: #fff;
+        }
+        .row {
+            width: 100%; /* Ensure the row takes up the full width */
+            max-width: 1170px; /* Max width to control the layout */
+            margin: 0 auto; /* Center the row */
+            display: flex;
+            align-items: flex-start; /* Align items at the start of the container */
+        }
+        .row .left, .row .right {
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        .row .left img {
+            width: 100%; /* Adjust the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below image */
+            margin: 0; /* Remove margins */
+            border-radius: 10px;
+        }
+        .row .right {
+            display: flex;
+            align-items: center; /* Vertically center text within its container */
+            margin-left: 10px; /* Gap between image and text */
+            flex: 1; /* Allow text to take remaining space */
+        }
+        .row .right .content {
+            width: 100%; /* Ensure content takes full width */
+            padding: 0; /* Remove padding */
+            box-sizing: border-box; /* Include padding and border in element’s total width and height */
+        }
+        .row .right .content p {
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+			text-align: justify;
+        }
+        @media(max-width: 768px) {
+            .row {
+                flex-direction: column; /* Stack image and text vertically on small screens */
+            }
+            .row .left img {
+                width: 100%; /* Ensure image takes full width on small screens */
+            }
+            .row .right {
+                margin-left: 0; /* Remove margin on small screens */
+                margin-top: 10px; /* Optional: add space above text if needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-w3l">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="index.html"><img src="images/durga.png" width="75px" height="80px">SCSK Matha</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="about.html#about">History</a>
+                                <a class="dropdown-item" href="about.html#Trust">Trust</a>
+                                <a class="dropdown-item" href="about.html#poojari">Poojaris</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSevas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sevas
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSevas">
+                                <a class="dropdown-item" href="seva.html#AshtadalaPadaPadmaRadana">Ashtadala Pada Padma Radana</a>
+                                <a class="dropdown-item" href="seva.html#ChandrasekharaSwamyAbhishekam">Chandrasekhara Swamy Abhishekam</a>
+                                <a class="dropdown-item" href="seva.html#ShukravaraViseshaRahukalaPooja">Shukravara Visesha Rahukala Pooja</a>
+                                <a class="dropdown-item" href="seva.html#ShukravaraViseshaNavaHaratulu">Shukravara Visesha Nava Haratulu</a>
+                                <a class="dropdown-item" href="seva.html#Kunkumarchana">Kunkumarchana</a>
+                                <a class="dropdown-item" href="seva.html#PallakiSeva">Pallaki Seva</a>
+                                <a class="dropdown-item" href="seva.html#WednesdayNagamayyaPooja">Wednesday Nagamayya Pooja</a>
+                                <a class="dropdown-item" href="seva.html#NavagrahlaPooja">Navagrahla Pooja</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSevas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Special<br>Days
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSevas">
+                                <a class="dropdown-item" href="specialdays.html#ChandrasekharaSwamyKalyanam">Chandrasekhara Swamy Kalyanam</a>
+                                <a class="dropdown-item" href="specialdays.html#AmavasyaHanumanPooja">Amavasya Hanuman Pooja</a>
+                                <a class="dropdown-item" href="specialdays.html#KaalikammaVaralakshmiVratham">Kaalikamma Varalakshmi Vratham</a>
+                                <a class="dropdown-item" href="specialdays.html#DasaraNavaratriBrahmotsavalu">Dasara Navaratri Brahmotsavalu</a>
+                                <a class="dropdown-item" href="specialdays.html#ShivvayaKarthikaPournami">Shivvaya Karthika Pournami</a>
+                                <a class="dropdown-item" href="specialdays.html#AAshadamasaAmmavariMahaMangalaPooja">AAshadamasa Ammavari MahaMangala Pooja</a>
+                                <a class="dropdown-item" href="specialdays.html#HanumanJayanthi">HanumanJayanthi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Publications.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mantras.html">Mantras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    
+    <!-- Include necessary scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Banner -->
+    <div class="w3l_banner_info">
+        <div class="slider1">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider3">
+                    <li>
+                        <div class="slider1-img">
+                            <div class="slider_banner_info">
+                                <!-- Banner content goes here -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seva Section -->
+    <section class="p-3" id="AshtadalaPadaPadmaRadana" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Ashtadala Pada Padma Radana</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/1.png" alt="Ashtadala Pada Padma Radana" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">At the Sri Kalikamba-Chandrasekhara Swamy Temple, the Ashtadala Pada Padma Seva is
+                         a revered and unique ritual performed with great devotion. This ritual involves 
+                         offering a golden lotus with eight petals, symbolizing the eight directions and 
+                         the blessings of the Ashta Dikpalakas. The seva begins with the purification of 
+                         the temple and the devotees, followed by the preparation of the golden lotus and \
+                         other offerings. Priests invoke the deity with sacred chants, and the golden lotus 
+                         is respectfully placed at the deity’s feet, accompanied by Vedic hymns. 
+                         The ritual concludes with an aarti and the distribution of prasad. Participating in 
+                         this seva is believed to bring immense spiritual merit, prosperity, and well-being, 
+                         removing obstacles from devotees' lives. The Ashtadala Pada Padma Seva is typically 
+                         performed on auspicious days, drawing numerous devotees seeking the divine blessings 
+                         of Lord Chandrasekhara Swamy.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+	<section class="p-3" id="ChandrasekharaSwamyAbhishekam" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Chandrasekhara Swamy Abhishekam</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/2.png" alt="ChandrasekharaSwamyAbhishekam" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">At our temple, a sacred ritual known as the Chandrasekhara Swamy Abhishekam is 
+						performed daily, dedicated to Lord Chandrasekhara Swamy, the deity of 
+						transformation and destruction. This profound act of devotion involves offering 
+						various substances—milk, water, honey, yogurt, and ghee—over the Chandrasekhara 
+						Swamy Lingam, accompanied by the chanting of Vedic hymns and mantras. The ritual, 
+						which symbolizes purification and sanctification, takes place three times a day: 
+						from 6:00 AM to 7:00 AM, 9:00 AM to 10:00 AM, and 8:00 PM to 8:30 PM, with the 
+						evening ritual featuring water offerings. Devotees participating in the Chandrasekhara 
+						Swamy Abhishekam connect deeply with Lord Chandrasekhara Swamy, seeking his divine 
+						grace and blessings. This ritual is believed to cleanse the soul, remove obstacles, 
+						and bring inner peace and well-being. Special monthly Abhishekams are held during 
+						Pradosham and major festivals like Maha Chandrasekhara Swamyratri, offering an elevated 
+						spiritual experience with additional rituals and grandeur. Devotees are encouraged to 
+						join us for the daily rituals, and those wishing to sponsor the Abhishekam or make 
+						special offerings can contact the temple office for more details. 
+						For further information see support Page.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+	<section class="p-3" id="ShukravaraViseshaRahukalaPooja" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Shukravara Visesha Rahukala Pooja</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/3.png" alt="ShukravaraViseshaRahukalaPooja" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">At Sri Kalikamba-Chandrasekhara Swamy Devasthanam, we observe the Rahukala Pooja every 
+						Friday afternoon, a solemn tradition deeply rooted in Hindu astrology and spirituality.
+						 Governed by the planet Rahu, Rahukala represents an inauspicious period each day according to 
+						 Vedic beliefs. To counteract its negative influences and invoke divine blessings, we conduct 
+						 the Rahukala Pooja with the intent to bring positivity, protection, and spiritual upliftment 
+						 to our devotees. We warmly invite devotees to join us during these sacred hours on Fridays to 
+						 participate in this ritual. By engaging in prayers and making offerings, devotees can seek solace, 
+						 spiritual growth, and divine intervention. This pooja aims not only to mitigate obstacles but also 
+						 to cultivate an atmosphere of peace and spiritual harmony within our community. Whether you seek 
+						 protection from negative energies or wish to enhance your spiritual journey, our temple offers a 
+						 sanctuary where you can connect deeply with divine energies. For those interested in participating 
+						 or sponsoring the Rahukala Pooja, please visit our temple. Your support helps us continue this 
+						 sacred tradition and enrich the spiritual lives of our community members. 
+						 We invite you to join us at Sri Kalikamba-Chandrasekhara Swamy Devasthanam, where spirituality and 
+						 tradition come together to inspire faith and bless lives.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+	<section class="p-3" id="ShukravaraViseshaNavaHaratulu" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Shukravara Visesha Nava Haratulu</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/4.png" alt="Shukravara Visesha Nava Haratulu" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Shukravara Visesha Nava Haratalu is a special ritual dedicated to the worship of 
+                        Sri Kaalikamma at Sri Chandrasekhara Kaalikamma Temple. This ritual is performed 
+                        with great devotion every Friday, as Friday (Shukravara) is considered an auspicious 
+                        day for worshipping the divine energies of the goddess. "Nava Haratalu" refers to the 
+                        nine unique forms of worship and offerings made to Sri Kaalikamma, each designed to 
+                        invoke specific blessings and positive energies, promoting spiritual well-being and 
+                        prosperity for the devotees.Devotees offer flowers in the pushpanjali, signifying their 
+                        devotion and surrender to the goddess's grace. The application of kumkum (vermillion) on the 
+                        deity and the devotees' foreheads is believed to bestow marital bliss and prosperity. The atmosphere 
+                        is filled with devotion as devotees sing bhajans and kirtans, praising the goddess and invoking her 
+                        blessings. The ritual concludes with the mangala aarti, a final offering of light accompanied by the 
+                        ringing of bells and chanting of mantras, creating a divine ambiance. Devotees believe that 
+                        performing this special worship on Fridays brings peace, prosperity, and divine blessings into their 
+                        lives. The Shukravara Visesha Nava Haratalu at Sri Chandrasekhara Kaalikamma Temple is a sacred and 
+                        enriching experience, fostering a strong connection with the divine and promoting spiritual growth, 
+                        attracting devotees from near and far.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+
+    <section class="p-3" id="Kunkumarchana" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Kunkumarchana</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/5.jpeg" alt="Kunkumarchana" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Kumkumarchana Seva at Sri Chandrasekhara Kaalikamma Temple is a revered ritual where 
+                        devotees worship Sri Kaalikamma with kumkum (vermilion), symbolizing auspiciousness and 
+                        divine feminine energy. The ritual begins with preparing kumkum, invoking the goddess 
+                        through prayers, and offering pinches of kumkum while chanting her 108 names, each 
+                        representing her divine attributes. Accompanied by the offering of flowers and other 
+                        sacred items, the ritual is enriched with devotional songs and mantras, creating a divine 
+                        atmosphere. The priest distributes kumkum and prasad, believed to bring good fortune and 
+                        protection, to the devotees who apply it on their foreheads. This sacred service, performed 
+                        with deep devotion, fosters a strong connection with the goddess, promoting prosperity, health, 
+                        and happiness, and draws devotees from near and far to seek Sri Kaalikamma's blessings..</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    <section class="p-3" id="PallakiSeva" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Pallaki Seva</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/6.png" alt="PallakiSeva" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Kumkumarchana Seva at Sri Chandrasekhara Kaalikamma Temple is a revered ritual where 
+                        devotees worship Sri Kaalikamma with kumkum (vermilion), symbolizing auspiciousness and 
+                        divine feminine energy. The ritual begins with preparing kumkum, invoking the goddess 
+                        through prayers, and offering pinches of kumkum while chanting her 108 names, each 
+                        representing her divine attributes. Accompanied by the offering of flowers and other 
+                        sacred items, the ritual is enriched with devotional songs and mantras, creating a divine 
+                        atmosphere. The priest distributes kumkum and prasad, believed to bring good fortune and 
+                        protection, to the devotees who apply it on their foreheads. This sacred service, performed 
+                        with deep devotion, fosters a strong connection with the goddess, promoting prosperity, health, 
+                        and happiness, and draws devotees from near and far to seek Sri Kaalikamma's blessings..</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    <section class="p-3" id="WednesdayNagamayyaPooja" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Wednesday Nagamayya Pooja</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/7.png" alt="WednesdayNagamayyaPooja" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Every Wednesday morning, Sri Kalikamba-Chandrasekhara Swamy Devasthanam conducts 
+                        the Nagammayya Pooja, a sacred ritual dedicated to Nagammayya, the serpent deity. 
+                        This pooja involves a ceremonial abhishekam, where the deity is bathed with holy 
+                        substances such as milk, honey, curd, ghee, and sacred water, symbolizing purification 
+                        and sanctification. Devotees gather to chant mantras and offer prayers, seeking the 
+                        blessings of Nagammayya for protection, prosperity, and the removal of obstacles in their 
+                        lives. The ritual concludes with the offering of prasad and the distribution of sacred ash 
+                        (vibhuti), believed to carry the deity's divine blessings. 
+                        The Wednesday Nagammayya Pooja fosters a deep spiritual connection among devotees and is a 
+                        significant weekly event at the temple, promoting peace and well-being.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    <section class="p-3" id="NavagrahlaPooja" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Navagrahala Pooja</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/sevas/8.png" alt="Navagrahala Pooja" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Navagraha Pooja at Sri Kalikamba-Chandrasekhara Swamy Devasthanam
+
+                        Navagraha Pooja is a significant ritual performed at Sri Kalikamba-Chandrasekhara
+                         Swamy Devasthanam, dedicated to the worship of the nine planetary deities 
+                         (Navagrahas). Each planet is believed to influence various aspects of life, 
+                         and this pooja aims to appease these celestial bodies to bring harmony, 
+                         prosperity, and positive influences into the devotees' lives. 
+                        
+                        The ritual begins with the invocation of the Navagrahas through specific mantras
+                         and prayers. Devotees offer various items such as flowers, fruits, and sacred 
+                         substances corresponding to each planet's unique characteristics and preferences. 
+                         The temple priests perform the pooja with elaborate rituals, including the 
+                         lighting of oil lamps and the chanting of Vedic hymns, which are believed to 
+                         mitigate the malefic effects of the planets and enhance their beneficial aspects.
+                        
+                        Participants often seek the Navagrahas' blessings for success in personal and 
+                        professional endeavors, health, and overall well-being. The Navagraha Pooja is not 
+                        only a spiritual practice but also a means of aligning oneself with the cosmic 
+                        energies, fostering balance and peace. This pooja attracts many devotees who 
+                        believe in the powerful influence of the Navagrahas and wish to attain their 
+                        favorable blessings.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    
+	<br>
+ 
+
+    <!-- Footer -->
+	<section class="footer">
+		<div class="container">
+		<h3>SCSK Matha</h3>
+			 <div class="wrapper">
+		<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
+		<li> <a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+		<li> <a href="#"><i class="fab fa-twitter"></i></a></li> 
+		<li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+		</ul>
+		</div>
+		<div class="copyright">
+					<p>© 2024 Kalamatha. All Rights Reserved | Redesign by <a href="https:/gitsglobal.in/"><font color="green"><strong>GITS</strong></font></a></p>
+					
+				</div>
+			</div>
+		</section>
+
+</body>
+</html>

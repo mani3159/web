@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpecialDays :: SCSK Matha</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    <meta name="keywords" content="temple, nandyal, durga, kalika matha, devotional">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style_common.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffc107;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #ffc107;
+            color: #fff;
+        }
+        .row {
+            width: 100%; /* Ensure the row takes up the full width */
+            max-width: 1170px; /* Max width to control the layout */
+            margin: 0 auto; /* Center the row */
+            display: flex;
+            align-items: flex-start; /* Align items at the start of the container */
+        }
+        .row .left, .row .right {
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        .row .left img {
+            width: 100%; /* Adjust the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below image */
+            margin: 0; /* Remove margins */
+            border-radius: 10px;
+        }
+        .row .right {
+            display: flex;
+            align-items: center; /* Vertically center text within its container */
+            margin-left: 10px; /* Gap between image and text */
+            flex: 1; /* Allow text to take remaining space */
+        }
+        .row .right .content {
+            width: 100%; /* Ensure content takes full width */
+            padding: 0; /* Remove padding */
+            box-sizing: border-box; /* Include padding and border in element’s total width and height */
+        }
+        .row .right .content p {
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+			text-align: justify;
+        }
+        @media(max-width: 768px) {
+            .row {
+                flex-direction: column; /* Stack image and text vertically on small screens */
+            }
+            .row .left img {
+                width: 100%; /* Ensure image takes full width on small screens */
+            }
+            .row .right {
+                margin-left: 0; /* Remove margin on small screens */
+                margin-top: 10px; /* Optional: add space above text if needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="header-w3l">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="images/durga.png" width="75px" height="80px">SCSK Matha</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="about.html#about">History</a>
+                            <a class="dropdown-item" href="about.html#Trust">Trust</a>
+                            <a class="dropdown-item" href="about.html#poojari">Poojaris</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSevas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sevas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSevas">
+                            <a class="dropdown-item" href="seva.html#AshtadalaPadaPadmaRadana">Ashtadala Pada Padma Radana</a>
+                            <a class="dropdown-item" href="seva.html#ChandrasekharaSwamyAbhishekam">Chandrasekhara Swamy Abhishekam</a>
+                            <a class="dropdown-item" href="seva.html#ShukravaraViseshaRahukalaPooja">Shukravara Visesha Rahukala Pooja</a>
+                            <a class="dropdown-item" href="seva.html#ShukravaraViseshaNavaHaratulu">Shukravara Visesha Nava Haratulu</a>
+                            <a class="dropdown-item" href="seva.html#Kunkumarchana">Kunkumarchana</a>
+                            <a class="dropdown-item" href="seva.html#PallakiSeva">Pallaki Seva</a>
+                            <a class="dropdown-item" href="seva.html#WednesdayNagamayyaPooja">Wednesday Nagamayya Pooja</a>
+                            <a class="dropdown-item" href="seva.html#NavagrahlaPooja">Navagrahla Pooja</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSevas" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Special<br>Days
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSevas">
+                            <a class="dropdown-item" href="specialdays.html#ChandrasekharaSwamyKalyanam">Chandrasekhara Swamy Kalyanam</a>
+                            <a class="dropdown-item" href="specialdays.html#AmavasyaHanumanPooja">Amavasya Hanuman Pooja</a>
+                            <a class="dropdown-item" href="specialdays.html#KaalikammaVaralakshmiVratham">Kaalikamma Varalakshmi Vratham</a>
+                            <a class="dropdown-item" href="specialdays.html#DasaraNavaratriBrahmotsavalu">Dasara Navaratri Brahmotsavalu</a>
+                            <a class="dropdown-item" href="specialdays.html#ShivvayaKarthikaPournami">Shivvaya Karthika Pournami</a>
+                            <a class="dropdown-item" href="specialdays.html#AAshadamasaAmmavariMahaMangalaPooja">AAshadamasa Ammavari MahaMangala Pooja</a>
+                            <a class="dropdown-item" href="specialdays.html#HanumanJayanthi">HanumanJayanthi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mantras.html">Mantras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+    <br>
+    <br>
+    
+    <!-- Include necessary scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Banner -->
+    <div class="w3l_banner_info">
+        <div class="slider1">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider3">
+                    <li>
+                        <div class="slider1-img">
+                            <div class="slider_banner_info">
+                                <!-- Banner content goes here -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seva Section -->
+    <section class="p-3" id="ChandrasekharaSwamyKalyanam" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Chandrasekhara Swamy Kalyanam</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/1.png" alt="Chandrasekhara Swamy Kalyanam" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Shivaratri Kalyanam is a significant ritual performed at the Sri Chandrasekhara 
+                        Kalikamma Temple, held annually on the auspicious night of Maha Shivaratri. This 
+                        sacred ceremony symbolizes the divine wedding of Lord Shiva and Goddess Parvati, 
+                        attracting numerous devotees who come to witness and partake in the celebrations. 
+                        The temple is beautifully adorned with flowers and lights, creating a vibrant and 
+                        spiritual atmosphere. Devotees engage in various rituals, including abhishekam, 
+                        where the deity is bathed with holy substances such as milk, honey, and ghee, 
+                        followed by the chanting of Vedic mantras and hymns. The Kalyanam is marked by a 
+                        grand procession, where the idols of Lord Shiva and Goddess Parvati are taken 
+                        around the temple premises, accompanied by the rhythmic beats of traditional 
+                        music and dance. This event not only holds immense religious significance but 
+                        also fosters a sense of community and devotion among the worshippers, making it a 
+                        memorable and spiritually enriching experience for all.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+	<section class="p-3" id="AmavasyaHanumanPooja" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Amavasya Hanuman Pooja</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/2.png" alt="AmavasyaHanumanPooja" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Amavasya Hanuman Pooja is a revered ritual performed at the Sri Chandrasekhara 
+                        Kalikamma Temple every Amavasya (New Moon day). Devotees gather to seek the 
+                        blessings of Lord Hanuman, revered for his unwavering devotion and immense 
+                        strength. The pooja begins with a serene abhishekam, where the deity is 
+                        ceremoniously bathed with sacred substances like milk, curd, honey, and holy 
+                        water, symbolizing purification and sanctity. Unlike typical Hanuman poojas, 
+                        this ritual is unique as it is conducted without the chanting of Hanuman Chalisa, 
+                        focusing instead on other powerful mantras and hymns. Devotees offer garlands, 
+                        fruits, and sweets, and perform aarti, creating an atmosphere filled with devotion 
+                        and spiritual fervor. The ritual serves as a moment of deep spiritual connection, 
+                        where devotees pray for strength, protection, and the fulfillment of their wishes. 
+                        The Amavasya Hanuman Pooja at Sri Chandrasekhara Kalikamma Temple is a spiritually 
+                        enriching experience that fosters faith and communal harmony among the worshippers.
+                    </p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+	<section class="p-3" id="KaalikammaVaralakshmiVratham" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Kaalikamma Varalakshmi Vratham</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/3.png" alt="KaalikammaVaralakshmiVratham" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Kaalikamma Varalakshmi Vratham is a revered ritual performed at Sri Chandrasekhara Swamy Temple, celebrated with great devotion and fervor. 
+                        This auspicious event is dedicated to Goddess Lakshmi, the harbinger of prosperity and well-being. 
+                        The vratham, observed mainly by women, takes place on the Friday before the full moon in the month of 
+                        Shravana. Devotees prepare by purifying themselves and setting up a beautifully adorned altar with an 
+                        idol or picture of Goddess Lakshmi, embellished with flowers, turmeric, kumkum, and various offerings 
+                        such as fruits, sweets, and traditional dishes. The ritual involves the recitation of the Varalakshmi 
+                        Vratham katha (story), singing hymns, and chanting mantras in praise of the Goddess. At Sri Chandrasekhara 
+                        Swamy Temple, the celebration includes elaborate decorations, special prayers, and collective chanting, 
+                        creating a spiritually charged atmosphere. The temple priests conduct abhishekam and aarti, invoking 
+                        the divine presence of Goddess Lakshmi and seeking her blessings for the devotees. 
+                        This vratham is not only a profound expression of faith and devotion but also a joyous occasion that 
+                        brings the community together in celebration of divine grace and prosperity.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+	<section class="p-3" id="DasaraNavaratriBrahmotsavalu" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Dasara Navaratri Ammavari Brahmotsavalu</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/4.png" alt="Dasara Navaratri Ammavari Brahmotsavalu" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Dasara Navaratri Ammavari Brahmotsavalu is a grand and vibrant festival celebrated at 
+                        Sri Chandrasekhara Kalikamma Temple with immense devotion and enthusiasm. This nine-day 
+                        festival, dedicated to Goddess Durga, marks the triumph of good over evil and is observed 
+                        with elaborate rituals and ceremonies. The temple is beautifully decorated with lights, 
+                        flowers, and traditional rangoli, creating a festive and spiritual ambiance. Each day of 
+                        Navaratri is significant, with special poojas, abhishekam, and aarti performed to honor 
+                        different forms of the Goddess. Devotees participate in chanting hymns, singing devotional 
+                        songs, and offering prasad to seek the blessings of the Goddess. The highlight of the 
+                        festival is the Brahmotsavam, where the idol of the Goddess is taken in a grand procession 
+                        around the temple, accompanied by music, dance, and the chanting of Vedic mantras. 
+                        This procession symbolizes the divine presence and blessings of the Goddess, spreading joy 
+                        and spiritual energy among the devotees. The Dasara Navaratri Ammavari Brahmotsavalu at 
+                        Sri Chandrasekhara Kalikamma Temple is a spiritually enriching and culturally vibrant 
+                        celebration, fostering a deep sense of devotion and community spirit among the worshippers.
+                    </p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+
+    <section class="p-3" id="ShivvayaKarthikaPournami" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Shivvaya Karthika Pournami</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/5.png" alt="ShivvayaKarthikaPournami" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Shivayya Karthika Pournami is a significant and spiritually enriching festival 
+                        celebrated at Sri Chandrasekhara Kalikamma Temple. Held on the full moon day of 
+                        the Karthika month, this event is dedicated to Lord Shiva and is marked by 
+                        various rituals and ceremonies. Devotees gather in large numbers to participate 
+                        in the festivities, which begin with a special abhishekam, where the Shiva Linga 
+                        is bathed with holy substances such as milk, honey, and ghee. The temple is beautifully 
+                        decorated with oil lamps, flowers, and traditional rangoli, creating a divine and serene 
+                        atmosphere. Chanting of Vedic hymns, singing of devotional songs, and performing aarti are 
+                        integral parts of the celebration, invoking the blessings of Lord Shiva for health, prosperity, 
+                        and spiritual growth. The highlight of Karthika Pournami is the lighting of thousands of lamps, 
+                        symbolizing the dispelling of darkness and ignorance, and the victory of light and knowledge. 
+                        The Shivayya Karthika Pournami at Sri Chandrasekhara Kalikamma Temple is a deeply revered and joyous 
+                        occasion, fostering a sense of community and spiritual devotion among the devotees.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    <section class="p-3" id="AAshadamasaAmmavariMahaMangalaPooja" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Aashadamasa Ammavari Maha Mangala Pooja</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/6.png" alt="AAshadamasaAmmavariMahaMangalaPooja" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Ashadamasa Ammavari Maha Mangala Pooja is a deeply revered ritual performed at Sri
+                        Chandrasekhara Kalikamma Temple during the auspicious month of Ashada. This special pooja 
+                        is dedicated to the Goddess, symbolizing prosperity, health, and divine blessings. 
+                        Devotees gather in large numbers to participate in the ceremony, which includes elaborate 
+                        rituals such as abhishekam, where the deity is bathed with sacred substances like milk, 
+                        honey, and ghee, followed by the adornment with flowers, turmeric, and kumkum. The temple 
+                        is beautifully decorated, enhancing the spiritual ambiance and drawing devotees into a state of 
+                        deep devotion and reverence. Chanting of hymns, recitation of Vedic mantras, and singing of devotional 
+                        songs are integral parts of the pooja, creating a spiritually charged atmosphere. The Maha Mangala Aarti, 
+                        a highlight of the ceremony, is performed with great devotion, invoking the Goddess's blessings for the 
+                        well-being and prosperity of the devotees. The Ashadamasa Ammavari Maha Mangala Pooja at Sri 
+                        Chandrasekhara Kalikamma Temple is a spiritually uplifting event, fostering a sense of community and 
+                        deepening the devotees' connection with the divine.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+    <section class="p-3" id="HanumanJayanthi" style="margin-top: 10%;margin-left: 2px;margin-right: 2px;border: 2px solid black;">
+        <h3 style="font-family:'Roboto',sans-serif;display:flex;justify-content:center;align-items:center;padding-bottom:2%;">Hanuman Jayanthi</h3>
+
+        <div class="row">
+            <div class="left">
+                <img src="images/specialdays/7.png" alt="Hanuman Jayanthi" class="img-fluid">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <p class="p-2">Hanuman Jayanthi is a significant festival celebrated at Sri Chandrasekhara 
+                        Kalikamma Temple, marking the birth of Lord Hanuman, the embodiment of devotion, 
+                        strength, and courage. Devotees flock to the temple to honor Hanuman, who is 
+                        revered for his unwavering devotion to Lord Rama and his immense power. The 
+                        celebrations begin with an abhishekam, where the idol of Hanuman is ceremoniously 
+                        bathed with holy substances such as milk, curd, honey, and ghee. The temple is 
+                        adorned with vibrant decorations, creating an atmosphere of joy and reverence. 
+                        Devotees chant Hanuman Chalisa and other hymns, offering flowers, fruits, and 
+                        sweets to the deity. The pooja includes special rituals and aarti, invoking Hanuman's 
+                        blessings for strength, protection, and the fulfillment of wishes. The highlight of the 
+                        celebration is the Pallaki Seva, where the idol of Hanuman is taken in a grand procession 
+                        around the temple, accompanied by music and dance, symbolizing his divine presence and 
+                        blessings. Hanuman Jayanthi at Sri Chandrasekhara Kalikamma Temple is a spiritually 
+                        enriching and joyous occasion, bringing the community together in a collective expression 
+                        of faith and devotion.</p>
+                </div>
+            </div>
+        </div>
+		<br><br>
+    </section>
+ 
+    
+	<br>
+ 
+
+    <!-- Footer -->
+	<section class="footer">
+		<div class="container">
+		<h3>SCSK Matha</h3>
+			 <div class="wrapper">
+		<ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
+		<li> <a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+		<li> <a href="#"><i class="fab fa-twitter"></i></a></li> 
+		<li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+		</ul>
+		</div>
+		<div class="copyright">
+					<p>© 2024 Kalamatha. All Rights Reserved | Redesign by <a href="https:/gitsglobal.in/"><font color="green"><strong>GITS</strong></font></a></p>
+					
+				</div>
+			</div>
+		</section>
+
+</body>
+</html>
