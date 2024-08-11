@@ -17,6 +17,13 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 </head>
 <body>
+  <audio id="my_audio" src="./songs/lm.mp3" autoplay loop></audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("my_audio");
+            audio.play();
+        });
+    </script>
   <header>
     <div class="header-w3l">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -1018,7 +1025,6 @@ $(document).ready(function() {
 <!-- //scrolling script -->
 <!--//start-smoth-scrolling -->
 
-<audio id="my_audio" src="./songs/lm.mp3"></audio>
 
 </body>
 </html>
