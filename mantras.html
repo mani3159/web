@@ -119,7 +119,7 @@
 		</div>
 	</header><br><br><br><br><br><br><br>
 
-<!--gallery  -->
+<!-- mantras  -->
 <div class="container">
 	<section class="py-5 header">
         <div class="container py-4">
@@ -178,12 +178,22 @@
 								}
 							</style>
 							
-							<script>const audioPlayer = new Plyr('#plyr-audio-player');</script>
+							<script>
+								// JavaScript to pause other audio when one starts playing
+								document.addEventListener('play', function(e) {
+									var audios = document.getElementsByTagName('audio');
+									for(var i = 0, len = audios.length; i < len; i++) {
+										if(audios[i] != e.target) {
+											audios[i].pause();
+										}
+									}
+								}, true);
+							</script>
 							
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">బిల్వాష్టకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/s5.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -193,7 +203,7 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">శ్రీరుద్ర నమకం చమకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/s6.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -202,7 +212,7 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">కాలభైరవాష్టకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/s4.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -212,7 +222,7 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">లింగాష్టకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/s3.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -222,7 +232,7 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">కర్పూర హారం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/s2.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -231,11 +241,11 @@
 
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
-									<div class="audio-title">చంద్ర చూడ శివ శంకర</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
-										<source src="songs/s1.mp3" type="audio/mp3" />
-										Your browser does not support the audio element.
-									</audio>
+								<div class="audio-title">చంద్ర చూడ శివ శంకర</div>
+								<audio class="audio-player" controls>
+									<source src="songs/s1.mp3" type="audio/mp3" />
+									Your browser does not support the audio element.
+								</audio>
 								</div>
 							</div>
 
@@ -244,11 +254,11 @@
 						   </div>
                         </div>
                         
-							<div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                             <div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">శ్రీ సూక్తం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/k1.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -256,65 +266,52 @@
 							</div>
 
 							<div class="col-md-12 mb-2">
-							<div class="audio-container">
-								<div class="audio-title">దుర్గా సూక్తం</div>
-								<audio class="audio-player" id="plyr-audio-player" controls>
-									<source src="songs/k2.mp3" type="audio/mp3" />
-									Your browser does not support the audio element.
-								</audio>
+								<div class="audio-container">
+									<div class="audio-title">దుర్గా సూక్తం</div>
+									<audio class="audio-player" controls>
+										<source src="songs/k2.mp3" type="audio/mp3" />
+										Your browser does not support the audio element.
+									</audio>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-md-12 mb-2">
-							<div class="audio-container">
-								<div class="audio-title">మేధా సూక్తం</div>
-								<audio class="audio-player" id="plyr-audio-player" controls>
-									<source src="songs/k3.mp3" type="audio/mp3" />
-									Your browser does not support the audio element.
-								</audio>
+							<div class="col-md-12 mb-2">
+								<div class="audio-container">
+									<div class="audio-title">మేధా సూక్తం</div>
+									<audio class="audio-player" controls>
+										<source src="songs/k3.mp3" type="audio/mp3" />
+										Your browser does not support the audio element.
+									</audio>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-md-12 mb-2">
-							<div class="audio-container">
-								<div class="audio-title">శ్రీ భూసూక్తం</div>
-								<audio class="audio-player" id="plyr-audio-player" controls>
-									<source src="songs/k4.mp3" type="audio/mp3" />
-									Your browser does not support the audio element.
-								</audio>
+							<div class="col-md-12 mb-2">
+								<div class="audio-container">
+									<div class="audio-title">శ్రీ భూసూక్తం</div>
+									<audio class="audio-player" controls>
+										<source src="songs/k4.mp3" type="audio/mp3" />
+										Your browser does not support the audio element.
+									</audio>
+								</div>
 							</div>
-						</div>
 						
-						<div class="col-md-12 mb-2">
-							<div class="audio-container">
-								<div class="audio-title">నిత్యానందకరీ - అన్నపూర్ణస్తోత్రం</div>
-								<audio class="audio-player" id="plyr-audio-player" controls>
-									<source src="songs/k5.mp3" type="audio/mp3" />
-									Your browser does not support the audio element.
-								</audio>
+							<div class="col-md-12 mb-2">
+								<div class="audio-container">
+									<div class="audio-title">నిత్యానందకరీ - అన్నపూర్ణస్తోత్రం</div>
+									<audio class="audio-player" controls>
+										<source src="songs/k5.mp3" type="audio/mp3" />
+										Your browser does not support the audio element.
+									</audio>
+								</div>
 							</div>
-						</div>
-						
-							
-
                         </div>
 						
                         <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                             
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
-									<div class="audio-title">శ్రీ హనుమాన్ చాలీసా</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
-										<source src="songs/c1.mp3" type="audio/mp3" />
-										Your browser does not support the audio element.
-									</audio>
-								</div>
-							</div>
-							
-							<div class="col-md-12 mb-2">
-								<div class="audio-container">
 									<div class="audio-title">శ్రీ హనుమాన్ దండకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/c2.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -323,33 +320,30 @@
 
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
+									<div class="audio-title">శ్రీ హనుమాన్ చాలీసా</div>
+									<audio class="audio-player" controls>
+										<source src="songs/c1.mp3" type="audio/mp3" />
+										Your browser does not support the audio element.
+									</audio>
+								</div>
+							</div>
+
+							<div class="col-md-12 mb-2">
+								<div class="audio-container">
 									<div class="audio-title">ఆంజనేయ అష్టోత్తరం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/c3.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
 								</div>
 							</div>
-
-							<div class="col-md-12 mb-2">
-								<div class="audio-container">
-									<div class="audio-title">మన్యు సూక్తం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
-										<source src="songs/c4.mp3" type="audio/mp3" />
-										Your browser does not support the audio element.
-									</audio>
-								</div>
-							</div>
-
-							
-
                         </div>
+						
                         <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        
-							<div class="col-md-12 mb-2">
+                            <div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">సుబ్రహ్మణ్య స్వామి అష్టకం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/o1.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -359,7 +353,7 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">శ్రీ విష్ణు సహస్ర నామ స్తోత్రం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/o2.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
@@ -369,36 +363,30 @@
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">శ్రీ లలితా సహస్రనామస్తోత్రం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/o3.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
 								</div>
 							</div>
-
+							
 							<div class="col-md-12 mb-2">
 								<div class="audio-container">
 									<div class="audio-title">పురుష సూక్తం</div>
-									<audio class="audio-player" id="plyr-audio-player" controls>
+									<audio class="audio-player" controls>
 										<source src="songs/o4.mp3" type="audio/mp3" />
 										Your browser does not support the audio element.
 									</audio>
 								</div>
 							</div>
-
-
-
-						</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    
-    
-
 </div>
+
 <!-- //gallery -->
 
 <!-- Contact -->
